@@ -1,7 +1,6 @@
 * {
     margin: 0 auto;
     padding: 0;
-    text-align: center;
     font-family: 12px Metropolis;
     border: border-box;
 }
@@ -14,6 +13,156 @@
     justify-content: center;
     align-items: center;
 }
+
+
+
+
+
+
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    background-color: white;
+    margin-top: -20px;
+}
+
+.navcont {
+    margin: 15px;
+    font-size: 16px;
+    font-weight: 450;
+    color: #000000;
+    cursor: pointer;
+}
+
+.strt {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.category{
+    display: none;
+    pointer-events: none;
+    cursor: pointer;
+    background-color: #f4f5f7;
+    height: max-content;
+    width: 100vw;
+}
+
+.category.active{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    position: fixed;
+    margin-top: 100px;
+    flex-direction: column;
+    
+}
+
+.catcont{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 15%;
+}
+
+.logo-image {
+    size: 10px;
+    width: 90px;
+    padding-right: 40px;
+    position: relative;
+    margin: 0;
+
+}
+
+.srch {
+    font-weight: 500;
+    font-size: 16px;
+    border: none;
+    color: #000;
+    width: 100%;
+    border-radius: 2em;
+    padding: 11px 35px;
+    background: #f4f5f7;
+}
+
+.inputicon i {
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 10px;
+}
+
+.user {
+    padding: 0;
+    margin: 20px;
+}
+
+.user i{
+    margin: 10px;
+}
+
+
+.image-over {
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.heading {
+    margin-top: 40px;
+    margin-bottom: 25px;
+}
+
+.explore {
+    font-weight: 900;
+    font-size: 25px;
+}
+
+.bestseller {
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.image1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 22vw;
+    margin: 25px;
+    overflow-x: scroll;
+
+}
+
+.image1 video {
+    border-radius: 20px;
+    margin: 25px;
+}
+
+.image1 video:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
 
 .header {
     height: 9px;
@@ -86,6 +235,43 @@
     font-size: 20px;
     left: 0px;
 }
+
+
+
+.category{
+    display: none;
+    pointer-events: none;
+    cursor: pointer;
+    background-color: #f4f5f7;
+    height: max-content;
+    width: 100vw;
+}
+
+.category .active{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    position: fixed;
+    margin-top: 100px;
+    flex-direction: column;
+    
+}
+
+.catcont{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.end {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 15%;
+}
+
+
 
 .slider{
     position: relative;
@@ -237,4 +423,235 @@
     display: flex;
     margin: 37px;
     margin-top: -1%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.product-item {
+    border-radius: 10px;
+    height: 23vw;
+    width: 23vw;
+
+}
+
+.prod {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 99vw;
+    overflow-x: hidden;
+}
+
+.prod-info .swatch-circle {
+    display: inline-flex;
+    margin-left: -9px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #D0D9DE;
+}
+
+.hrs {
+    position: relative;
+    bottom: 3%;
+    right: -12%;
+    background: gold;
+    padding: 6px;
+    width: 250px;
+    padding-bottom: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.btn {
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    justify-content: end;
+    width: 100px;
+}
+
+.prod-info {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f5f7;
+    border-radius: 10px;
+}
+
+.name {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.x span {
+    font-weight: 600;
+    font-family: sans-serif;
+}
+
+.prices {
+    display: flex;
+    justify-content: space-between;
+}
+
+.x1 {
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.x1 span {
+    margin: 2px;
+}
+
+.inr {
+    font-size: 20px;
+    font-weight: 750;
+}
+
+.inr2 {
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+.offer {
+    font-size: 15px;
+    font-weight: 700;
+    color: green;
+}
+
+.gurantee {
+    display: flex;
+    justify-content: center;
+    margin-left: 70px;
+    margin-right: 70px;
+    height: 220px;
+    margin-top: 50px;
+}
+
+.txt {
+    display: flex;
+    justify-content: center;
+
+}
+
+.txt1 {
+    margin-left: 85px;
+    margin-right: 85px;
+    margin-top: 0;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.engrave {
+    position: relative;
+    bottom: 78.3%;
+    right: 0%;
+    color: white;
+    background: rgba(0, 0, 0, 0.523);
+    padding: 6px;
+    width: 150px;
+    height: max-content;
+    padding: 1px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.tribe {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.tribe video {
+    margin: 25px;
+    height: 25vw;
+    border-radius: 10px;
+}
+
+.tribecont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.x2 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.small {
+    position: relative;
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(238, 240, 244);
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px;
+    bottom: 114px;
+    width: 50px;
+    height: 50px;
+
+}
+.press{
+    display: flex;
+
+}
+.pressimg{
+    width: 30vw;
+    background-color: #d0d9de;
+    height: 50vh;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-icon{
+    background-color: #f4f5f7;
+    text-align: center;
+    padding-top: 120px;
+
+}
+
+.end1{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: rgb(214, 235, 235);
+}
+.end1 image{
+    height: 100px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.email{
+    margin: 20px;
+    margin-left: 0px;
+    height: 50px;
+    border: 0;
+    width: 88%;
+    display: inline-block;
+    font-size: 13px;
+    padding: 0 12px;
 }
